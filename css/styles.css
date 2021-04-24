@@ -31,12 +31,26 @@ body
     padding: 0;
 }
 /* HEADER Proprieties */
-#links_header 
+
+
+/* Hébergement */
+#lodging
 {
-    display: flex;
-    justify-content: space-around;
-    font color: black;
+    border-top: 2px solid rgb(0,101,252);
+   /* padding: 30px*/
 }
+/* Activités */
+#activities
+{
+   /* padding: 68px;*/
+}
+/* S'inscrire */
+#login
+{
+    font-weight: bold;
+    /*padding: 77px;*/
+}
+/* put in % for screen size? */
 
 /* FOOTER Proprieties */
 #links_footer 
@@ -47,44 +61,75 @@ body
     font color: black;
 }
 /* Position */
-header {position: absolute; top: 0; left: 0; right: 0}
 body   {position: relative;}
 footer {position: absolute; bottom: 0; left: 0; right: 0}
 
+/* logo */
+#logo_reservia 
+{
+    margin-left: 3.58055%;
+}
+#login
+{
+    position:absolute;
+    top: 3.54166%;
+    right:5.34722%;
+
+}
+/* Top butons */
+#links_header 
+{
+    display: flex;
+    justify-content: flex-end;
+    font color: black;
+    position:absolute;
+    top:0;
+    right:0;
+    margin-right: 5.34722%; 
+}
+#login
+{
+
+}
+#activities
+{
+ 
+}
+/* Summary site text*/
+.site_goal
+{
+    margin-top: 9.09722%;
+    margin-left: 3.81944%;
+}
+
 /* COLORS PRIORITIES */
+
 /*Headers color */
 
-#lodging:visited
+/*Hébergement and S'inscrire in blue */
+/* links style */
+#links_header a
 {
     color:rgb(0,101,252);
-    outline color :none;
 }
-  
-/*Hébergement and S'inscrire in blue */
-#lodging, #login
+/* links visited style */ 
+#lodging:visited, #login:visited a
 {
-    color: rgb(0,101,252)
+    color:rgb(0,101,252);
 }
 
-
-/* Footers color*/
+/* Footers color */
 #links_footer a
 {
     color: black;
 }
 
 
-/* Links Styles */
-a:link, a:hover, a:active 
+/* Links Styles - Always Link > Visited > Hover > Active */
+/* remove underline background */
+a:link
 {
     color: none;
     text-decoration: none;
     background-color: none;
-  }
-
-  a:visited
-  {
-    color: none;
-    text-decoration: none;
-    background-color: none;
-  }
+}
