@@ -1,6 +1,15 @@
+/* Create & dl font */
+@font-face {
+    font-family: 'raleway';
+    src: url('font/Raleway-VariableFont_wght.ttf') format('ttf'),
+         url('font/Raleway-Italic-VariableFont_wght.ttf') format('ttf'),
+}
+
+/* Propriety for all the page*/
 html 
 {
     height: 100%;
+    font-family: 'raleway', Arial, serif;
 }
 
 body 
@@ -14,6 +23,7 @@ body
 {
     display: flex;
     justify-content: space-around;
+    background-color: rgb(242,242,242);
 }
 
 body {position: relative;}
