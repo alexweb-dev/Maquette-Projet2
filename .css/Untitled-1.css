@@ -12,12 +12,12 @@ footer
 
 #links_footer
 {
-    border: 1px solid black;
+    display: flex;
 }
 
 
 .footer_block
 {
-    display: flex;
+
 }
 
