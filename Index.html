@@ -3,24 +3,32 @@
     <head>
         <meta charset="utf-8" />
         <link rel="stylesheet" href="css/styles.css">
+        <!-- Check size recolution here-->
+        <!-- <link rel="stylesheet" href="style.css" /> <!-- Pour tout le monde -->
+        <!-- <link rel="stylesheet" media="screen and (max-width: 1280px)" href="petite_resolution.css" /> <!-- Pour ceux qui ont une résolution inférieure à 1280px -->
+        
+        <!--Titre de la page -->
         <title>Reservia - Trouver votre hébergement pour des vacances de rêve</title>
     </head>
 
     <body>
         <header>
-            <! -- En-tête -->
-            <p>
-                <! -- Le loggo Reservia ici -->
-                <img src="css/image/Logo_Reservia3x.png" alt="Logo réservia" />
-                <a href="#">Hébergements</a>
-                <a href="#">Activités</a>
-                <a href="#">S'inscrire</a>
-            </p>
-            <p> 
-                <! -- Description du site -->
+            <!-- En-tête -->
+            <div id="links_header"> 
+                <!-- Le loggo Reservia ici -->
+                <img src="css/image/Logo_Reservia3x.png" alt="Logo réservia" id="logo_reservia"/>   
+                <p> 
+                    <span id="lodging"><a href="#">Hébergements</a></span>
+                    <span id="activities"><a href="#">Activités</a></span>
+                    <span id="login"><a href="#">S'inscrire</a></span>
+                </p>
+            </div>    
+                <p> 
+                <!-- Description du site -->
                 <h1>Trouver votre hébergement pour des vacances de rêve </h1>
                 En plein centre ville ou en pleine nature
-            </p>
+                </p>
+            
         </header>
         
         <nav>
@@ -36,9 +44,9 @@
             </article>
         </section>
 
-        <! -- Pied-de-page -->
+        <!-- Pied-de-page -->
         <footer>
-            <! -- Liens de pied-de-page -->
+            <!-- Liens de pied-de-page -->
             <div id="links_footer">
                 <div class="footer_apropos">
                     <p> <h2>A propos</h2>
