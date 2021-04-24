@@ -5,5 +5,19 @@ header
 
 footer
 {
-    border: 3px blue dashed;
+    
 }
+
+
+
+#links_footer
+{
+    border: 1px solid black;
+}
+
+
+.footer_block
+{
+    display: flex;
+}
+
