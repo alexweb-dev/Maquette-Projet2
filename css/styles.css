@@ -54,12 +54,13 @@ footer {position: absolute; bottom: 0; left: 0; right: 0}
 /* COLORS PRIORITIES */
 /*Headers color */
 
-a:visited
+#lodging:visited
 {
-    color:black;
+    color:rgb(0,101,252);
+    outline color :none;
 }
   
-
+/*Hébergement and S'inscrire in blue */
 #lodging, #login
 {
     color: rgb(0,101,252)
