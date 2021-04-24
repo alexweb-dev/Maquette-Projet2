@@ -30,7 +30,7 @@ body
     margin: 0;
     padding: 0;
 }
-/* Add header*/
+/* HEADER Proprieties */
 #links_header 
 {
     display: flex;
@@ -38,7 +38,7 @@ body
     font color: black;
 }
 
-/* Footer general */
+/* FOOTER Proprieties */
 #links_footer 
 {
     display: flex;
@@ -51,21 +51,39 @@ header {position: absolute; top: 0; left: 0; right: 0}
 body   {position: relative;}
 footer {position: absolute; bottom: 0; left: 0; right: 0}
 
-/* Propriety links */
-/* Color links in footer only*/
+/* COLORS PRIORITIES */
+/*Headers color */
+
+a:visited
+{
+    color:black;
+}
+  
+
+#lodging, #login
+{
+    color: rgb(0,101,252)
+}
+
+
+/* Footers color*/
 #links_footer a
 {
     color: black;
 }
-/*Header in blue except 'Activités'*/
 
 
-/* Remove underline */
-a:link {
-    text-decoration: none;
-  }
-/*login in blue */
-#login
+/* Links Styles */
+a:link, a:hover, a:active 
 {
-    color: rgb(0,101,252)
-}
+    color: none;
+    text-decoration: none;
+    background-color: none;
+  }
+
+  a:visited
+  {
+    color: none;
+    text-decoration: none;
+    background-color: none;
+  }
