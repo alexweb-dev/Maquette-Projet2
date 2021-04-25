@@ -13,13 +13,16 @@
 /* Create & dl font */
 @font-face {
     font-family: 'raleway';
-    src: url('font/Raleway-VariableFont_wght.ttf') format('ttf'),
+    src: url('font/Raleway-VariableFont_wght.ttf') format('ttf');
 }
 @font-face {
     font-family: 'ralewayitalic';
-    src: url('font/Raleway-Italic-VariableFont_wght.ttf') format('ttf'),
+    src: url('font/Raleway-Italic-VariableFont_wght.ttf') format('ttf');
 }
-
+*
+{
+font-family: 'raleway', Arial, 'sans-serif';
+}
 /* Propriety for all the page*/
 html 
 {
@@ -33,6 +36,7 @@ html
 {
     display: flex;
     justify-content: flex-end;
+    font-size: 0.75em;
     /*position: relative;*/
     font color: black;
     top:0%;
@@ -88,7 +92,7 @@ html
 {
     position:absolute;
     top: 34px;
-    left: 53px;
+    left: 3.75%;
 }
 /* Top butons */
 
@@ -110,7 +114,6 @@ body   {position: relative;}
     background-color: rgb(242,242,242);
     font color: black;
     color: black;
-    font-size: 17px;
     position: absolute; bottom: 0; left:0;right: 0;
     height: 218px;
     weight: 100%;
@@ -118,34 +121,39 @@ body   {position: relative;}
 #links_footer a
 {
     color: black;
-    font-size: 13px;
+    font-size: 0.766em;
     
 }
+/* A propos Nos hébergements Assistance */
+.Title2
+{
+    font-family: 'raleway', Arial, serif;
+    font-size: 1.06em;
+}
+
 /* A propos */
 .footer_apropos
 {
     position:absolute;
     top: 49px;
-    left: 51px;
+    /*left: 51px; en 1440*/
+    left: 3.47222%;
 }
 /* Nos hébergements */
 .footer_hebergements
 {
     position:absolute;
     top: 49px;
-    left: 502px;
+    /*left: 502px; en 1440*/
+    left: 34.86111%;
 }
 /* Assistance */
 .footer_assistance
 {
     position:absolute;
     top: 49px;
-    left: 958px;
-}
-.Title2
-{
-    font-family: 'raleway', Arial, serif;
-    font-size: 17px;
+    /* left: 958px; en 1440*/
+    left: 66.5277%;
 }
 
 /* Links Styles - Always Link > Visited > Hover > Active */
@@ -165,7 +173,8 @@ body
 /* Summary site text*/
 .site_goal
 {
+    font-size: 1.06em;
     position:absolute;
     top: 131px;
-    left: 55px;
+    left: 3.81844%;
 }
