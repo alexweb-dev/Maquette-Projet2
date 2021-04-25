@@ -42,7 +42,7 @@ html
 
 
 /* S'inscrire */
-.header_login, .header_login:link, .header_login:visited, .header_login:hover, .header_login:active
+.header_login a
 {
     color: rgb(0,101,252);
     font color: rgb(0,101,252);
@@ -59,9 +59,11 @@ html
     position:absolute;
     top
 }*/
-.header_activities
+.header_activities a
 {
    /* How to put Y in %age */
+   color: black;
+   font color: black;
    position:absolute;
    top: 51px;
    right: 215px;
@@ -72,10 +74,18 @@ html
 {
     color: rgb(0,101,252);
     border-top: 2px solid rgb(0,101,252);
-    padding: 14px;
+    padding: 51px;
     position:absolute;
-    top: 37px;
-    right: 345px;
+    top: 0px;
+    right: 323px;
+}
+
+/* logo */
+#logo_reservia 
+{
+    position:absolute;
+    top: 34px;
+    left: 53px;
 }
 /* Top butons */
 
@@ -85,42 +95,53 @@ html
 /* put in % for screen size? */
 
 /* FOOTER Proprieties */
-#links_footer 
-{
-    display: flex;
-    justify-content: space-around;
-    background-color: rgb(242,242,242);
-    font color: black;
-}
 /* Position */
 body   {position: relative;}
-footer {position: absolute; bottom: 0; left: 0; right: 0}
 
-/* logo */
-#logo_reservia 
+
+/* Footers  */
+#links_footer
 {
-    margin-left: 3.58055%;
+    display: flex;
+    justify-content: start;
+    background-color: rgb(242,242,242);
+    font color: black;
+    color: black;
+    font-size: 17px;
+    position: absolute; bottom: 0; left:0;right: 0;
+    height: 218px;
+    weight: 100%;
 }
-
-
-
-/* Summary site text*/
-.site_goal
-{
-    margin-top: 9.09722%;
-    margin-left: 3.81944%;
-}
-
-/* COLORS PRIORITIES */
-
-/*Headers color */
-
-/*Hébergement and S'inscrire in blue */
-
-/* Footers color */
 #links_footer a
 {
     color: black;
+    font-size: 13px;
+    
+}
+/* A propos */
+.footer_apropos
+{
+    position:absolute;
+    top: 49px;
+    left: 51px;
+}
+/* Nos hébergements */
+.footer_hebergements
+{
+    position:absolute;
+    top: 49px;
+    left: 502px;
+}
+/* Assistance */
+.footer_assistance
+{
+    position:absolute;
+    top: 49px;
+    left: 958px;
+}
+.Title2
+{
+    font-size: 17px;
 }
 
 /* Links Styles - Always Link > Visited > Hover > Active */
@@ -136,4 +157,11 @@ body
     min-height: 100%;
     margin: 0;
     padding: 0;
+}
+/* Summary site text*/
+.site_goal
+{
+    position:absolute;
+    top: 131px;
+    left: 55px;
 }
