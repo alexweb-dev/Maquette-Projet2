@@ -24,32 +24,64 @@ html
     font-family: 'raleway', Arial, serif;
 }
 
-body 
-{
-    min-height: 100%;
-    margin: 0;
-    padding: 0;
-}
 /* HEADER Proprieties */
+/*header {position: relavtive; top: 0; left: 0; right: 0}*/
+#links_header
+{
+    display: flex;
+    justify-content: flex-end;
+    /*position: relative;*/
+    font color: black;
+    top:0%;
+    right: 5.34722%; 
+}
+#links_header:link, #links_header:visited, #links_header:hover, #links_header:active
+{
+    color: black;
+}
 
+
+/* S'inscrire */
+.header_login, .header_login:link, .header_login:visited, .header_login:hover, .header_login:active
+{
+    color: rgb(0,101,252);
+    font color: rgb(0,101,252);
+    font-weight: bold;
+    position:absolute;
+    top: 51px;
+    right: 77px;
+}
+/*
+{
+    color: rgb(0,101,252);
+    font color: rgb(0,101,252);
+    font-weight: bold;
+    position:absolute;
+    top
+}*/
+.header_activities
+{
+   /* How to put Y in %age */
+   position:absolute;
+   top: 51px;
+   right: 215px;
+}
 
 /* Hébergement */
-#lodging
+.header_lodging
 {
+    color: rgb(0,101,252);
     border-top: 2px solid rgb(0,101,252);
-   /* padding: 30px*/
+    padding: 14px;
+    position:absolute;
+    top: 37px;
+    right: 345px;
 }
+/* Top butons */
+
 /* Activités */
-#activities
-{
-   /* padding: 68px;*/
-}
-/* S'inscrire */
-#login
-{
-    font-weight: bold;
-    /*padding: 77px;*/
-}
+
+
 /* put in % for screen size? */
 
 /* FOOTER Proprieties */
@@ -69,32 +101,9 @@ footer {position: absolute; bottom: 0; left: 0; right: 0}
 {
     margin-left: 3.58055%;
 }
-#login
-{
-    position:absolute;
-    top: 3.54166%;
-    right:5.34722%;
 
-}
-/* Top butons */
-#links_header 
-{
-    display: flex;
-    justify-content: flex-end;
-    font color: black;
-    position:absolute;
-    top:0;
-    right:0;
-    margin-right: 5.34722%; 
-}
-#login
-{
 
-}
-#activities
-{
- 
-}
+
 /* Summary site text*/
 .site_goal
 {
@@ -107,23 +116,12 @@ footer {position: absolute; bottom: 0; left: 0; right: 0}
 /*Headers color */
 
 /*Hébergement and S'inscrire in blue */
-/* links style */
-#links_header a
-{
-    color:rgb(0,101,252);
-}
-/* links visited style */ 
-#lodging:visited, #login:visited a
-{
-    color:rgb(0,101,252);
-}
 
 /* Footers color */
 #links_footer a
 {
     color: black;
 }
-
 
 /* Links Styles - Always Link > Visited > Hover > Active */
 /* remove underline background */
@@ -132,4 +130,10 @@ a:link
     color: none;
     text-decoration: none;
     background-color: none;
+}
+body 
+{
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
 }
