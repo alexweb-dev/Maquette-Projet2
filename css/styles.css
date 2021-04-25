@@ -39,7 +39,7 @@ html
     font-size: 0.75em;
     /*position: relative;*/
     font color: black;
-    top:0%;
+    top: 0%;
     right: 5.34722%; 
 }
 #links_header:link, #links_header:visited, #links_header:hover, #links_header:active
@@ -48,7 +48,7 @@ html
 }
 
 
-/* S'inscrire */
+/* Liens S'inscrire */
 .header_login a
 {
     color: rgb(0,101,252);
@@ -58,14 +58,7 @@ html
     top: 51px;
     right: 77px;
 }
-/*
-{
-    color: rgb(0,101,252);
-    font color: rgb(0,101,252);
-    font-weight: bold;
-    position:absolute;
-    top
-}*/
+/* Liens Activités */
 .header_activities a
 {
    /* How to put Y in %age */
@@ -76,7 +69,7 @@ html
    right: 215px;
 }
 
-/* Hébergement */
+/* 'Liens' Hébergement */
 .header_lodging
 {
     color: rgb(0,101,252);
@@ -102,36 +95,33 @@ html
 /* put in % for screen size? */
 
 /* FOOTER Proprieties */
-/* Position */
-body   {position: relative;}
 
-
-/* Footers  */
+/* General Footers Rules  */
 #links_footer
 {
     display: flex;
     justify-content: start;
     background-color: rgb(242,242,242);
-    font color: black;
-    color: black;
     position: absolute; bottom: 0; left:0;right: 0;
     height: 218px;
     weight: 100%;
 }
+/* Titles of footer */
+#links_footer h2
+{
+    color: black;
+    font-size: 0.796875em;
+    font-weight: bold;
+}
+/* Links of footers*/
 #links_footer a
 {
     color: black;
-    font-size: 0.766em;
+    font-size: 0.75em;
     
 }
-/* A propos Nos hébergements Assistance */
-.Title2
-{
-    font-family: 'raleway', Arial, serif;
-    font-size: 1.06em;
-}
-
-/* A propos */
+/* Footer Titles : A propos Nos hébergements Assistance */
+/* A propos + linkks below */
 .footer_apropos
 {
     position:absolute;
@@ -139,7 +129,9 @@ body   {position: relative;}
     /*left: 51px; en 1440*/
     left: 3.47222%;
 }
-/* Nos hébergements */
+
+/*Lines of A propos solo*/
+/* Nos hébergements + links below */
 .footer_hebergements
 {
     position:absolute;
@@ -147,13 +139,30 @@ body   {position: relative;}
     /*left: 502px; en 1440*/
     left: 34.86111%;
 }
-/* Assistance */
+/* Assistance + links below */
 .footer_assistance
 {
     position:absolute;
-    top: 49px;
     /* left: 958px; en 1440*/
     left: 66.5277%;
+}
+/* Assistance */
+.footer_assistance .title_assistance
+{
+    position:absolute;
+    top: 49px;
+}
+/* line1 below Assistance */
+.footer_assistance .assistance_line1
+{
+    position:absolute;
+    top: 49px;
+}
+/* line2 below Assistance */
+.footer_assistance .assistance_line1
+{
+    position:absolute;
+    top: 49px;
 }
 
 /* Links Styles - Always Link > Visited > Hover > Active */
@@ -164,17 +173,45 @@ a:link
     text-decoration: none;
     background-color: none;
 }
+body   {position: relative;}
 body 
 {
     min-height: 100%;
     margin: 0;
     padding: 0;
 }
+p
+{
+    font-size: 0.75em;
+    font-weight: normal;
+}
+h1
+{
+    font-size: 0.984375em;
+    font-weight: bold;
+}
+h2
+{
+    font-size: 0.796875em;
+    font-weight: bold;
+}
+h3
+{
+    font-size: 0.75em;
+    font-weight: bold;
+}
 /* Summary site text*/
 .site_goal
 {
-    font-size: 1.06em;
+ 
     position:absolute;
     top: 131px;
     left: 3.81844%;
+}
+.site_wherever
+{
+    position:absolute;
+    top: 163px;
+    left: 3.81944%;
+
 }
