@@ -146,7 +146,7 @@ html
     /* left: 958px; en 1440*/
     left: 66.5277%;
 }
-/* Assistance */
+/* Assistance Title */
 .footer_assistance .title_assistance
 {
     position:absolute;
@@ -155,14 +155,14 @@ html
 /* line1 below Assistance */
 .footer_assistance .assistance_line1
 {
-    position:absolute;
-    top: 49px;
+    position: absolute;
+    top: 89px;
 }
 /* line2 below Assistance */
-.footer_assistance .assistance_line1
+.footer_assistance .assistance_line2
 {
-    position:absolute;
-    top: 49px;
+    position: absolute;
+    bottom:  98px;
 }
 
 /* Links Styles - Always Link > Visited > Hover > Active */
