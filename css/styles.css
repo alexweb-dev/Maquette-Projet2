@@ -32,10 +32,14 @@ html
 
 /* HEADER Proprieties */
 /*header {position: relavtive; top: 0; left: 0; right: 0}*/
+header
+{
+    min-height: 100%;
+}
 #links_header
 {
-    display: flex;
-    justify-content: flex-end;
+    /*display: flex;
+    justify-content: flex-end;*/
     font-size: 0.75em;
     /*position: relative;*/
     font color: black;
@@ -87,16 +91,14 @@ html
     top: 34px;
     left: 3.75%;
 }
-/* Top butons */
 
-/* Activités */
-
-
-/* put in % for screen size? */
+/* put height in % for screen size?done? */
 
 /* FOOTER Proprieties */
 
 /* General Footers Rules  */
+footer
+
 #links_footer
 {
     display: flex;
@@ -173,7 +175,7 @@ a:link
     text-decoration: none;
     background-color: none;
 }
-body   {position: relative;}
+
 body 
 {
     min-height: 100%;
@@ -213,5 +215,9 @@ h3
     position:absolute;
     top: 163px;
     left: 3.81944%;
+
+}
+.footer
+{
 
 }
