@@ -46,21 +46,11 @@ header
     width: 100%;
     background-color:rgb(206, 197, 197);
 }
-#links_header
-{
-    display: flex;
-    justify-content: flex-end;
-    flex-wrap: wrap;
-    margin:120px;
-    font-size: 0.75em;
-    /*position: relative;*/
-    right: ; 
-}
+
 #links_header:link, #links_header:visited, #links_header:hover, #links_header:active
 {
     color: black;
 }
-
 
 /* Liens S'inscrire */
 .header_login a
@@ -78,22 +68,29 @@ header
     font-size: 0.990em;
 }
 /* links header size */
-#links_header
+/*#links_header
 {
     font-size: 1.0em;
-    text-align: right;
+    text-align: center;
     margin: 0;
     padding: 0;
 }
+#links_header .toplinks
+{
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    margin: 10% 10% 10% 10%;
+}*/
 
 /* Liens Activités */
 .header_activities a
 {
-   /* How to put Y in %age */
    color: black;
+   position: relative;
    /*position:relative;
-   top: 51px;
-   right: 215px;*/
+   top: 51px;*/
+   right: 215px
 }
 .header_activities a:hover
 {
@@ -105,10 +102,26 @@ header
 {
     color: rgb(0,101,252);
     border-top: 2px solid rgb(0,101,252);
-    padding: 51px;
+    padding: 49px;
+    position: relative;
+    top: -51px;
     /*position:relative;
-    top: 0px;
-    right: 323px;*/
+    top: 0px;*/
+    right: 222px;
+}
+.toplinks
+{
+    margin: 51px 0 0 0;
+}
+#links_header
+{
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    position: relative; top: 0;right: 0;
+    /*padding: 89px 3.47222% 57px 3.47222%;*/
+    width: 100%;
+    height: 120px;
 }
 
 /* logo */
