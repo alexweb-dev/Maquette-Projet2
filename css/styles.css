@@ -11,6 +11,7 @@
 /* @media all and (min-width: 1024px) and (max-width: 1280px) */
 
 /* Create & dl font */
+
 @font-face {
     font-family: 'raleway';
     src: url('font/Raleway-VariableFont_wght.ttf') format('ttf');
@@ -29,22 +30,31 @@ html
     height: 100%;
     font-family: 'raleway', Arial, serif;
 }
-
+body 
+{
+    display: flex;
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'raleway', 'sans-serif';
+}
 /* HEADER Proprieties */
 /*header {position: relavtive; top: 0; left: 0; right: 0}*/
 header
 {
-    min-height: 100%;
+    height: 120px;
+    width: 100%;
+    background-color:rgb(206, 197, 197);
 }
 #links_header
 {
-    /*display: flex;
-    justify-content: flex-end;*/
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    margin:120px;
     font-size: 0.75em;
     /*position: relative;*/
-    font color: black;
-    top: 0%;
-    right: 5.34722%; 
+    right: ; 
 }
 #links_header:link, #links_header:visited, #links_header:hover, #links_header:active
 {
@@ -56,39 +66,56 @@ header
 .header_login a
 {
     color: rgb(0,101,252);
-    font color: rgb(0,101,252);
+    font-size: 1.0em;
     font-weight: bold;
     position:absolute;
     top: 51px;
-    right: 77px;
+    right: 5.34722%;
 }
+/* mouseover login */
+.header_login a:hover
+{
+    font-size: 0.990em;
+}
+/* links header size */
+#links_header
+{
+    font-size: 1.0em;
+    text-align: right;
+    margin: 0;
+    padding: 0;
+}
+
 /* Liens Activités */
 .header_activities a
 {
    /* How to put Y in %age */
    color: black;
-   font color: black;
-   position:absolute;
+   /*position:relative;
    top: 51px;
-   right: 215px;
+   right: 215px;*/
 }
-
+.header_activities a:hover
+{
+    color:  rgb(0,101,252);
+    font-size: 0.990em;
+}
 /* 'Liens' Hébergement */
 .header_lodging
 {
     color: rgb(0,101,252);
     border-top: 2px solid rgb(0,101,252);
     padding: 51px;
-    position:absolute;
+    /*position:relative;
     top: 0px;
-    right: 323px;
+    right: 323px;*/
 }
 
 /* logo */
 #logo_reservia 
 {
     position:absolute;
-    top: 34px;
+    top: 22px;
     left: 3.75%;
 }
 
@@ -98,15 +125,17 @@ header
 
 /* General Footers Rules  */
 footer
-
-#links_footer
 {
-    display: flex;
-    justify-content: start;
     background-color: rgb(242,242,242);
-    position: absolute; bottom: 0; left:0;right: 0;
-    height: 218px;
-    weight: 100%;
+    height: 700px; 
+}
+
+ul{
+    list-style: none;
+    padding: 0;
+}
+li{
+    padding-bottom: 7px;
 }
 /* Titles of footer */
 #links_footer h2
@@ -123,50 +152,69 @@ footer
     
 }
 /* Footer Titles : A propos Nos hébergements Assistance */
-/* A propos + linkks below */
+/* marges between footer column */
+#links_footer .footer_col
+{
+    /*display: inline-block;
+    flex-wrap: wrap;*/
+    margin: 49px 13.8888% 57px 3.4722%;
+}
+
+.footitle
+{
+    padding-bottom: 3px;
+}
+
+li a:hover
+{
+    color: none;
+    text-decoration: underline
+}
+
+/*
 .footer_apropos
 {
     position:absolute;
     top: 49px;
     /*left: 51px; en 1440*/
-    left: 3.47222%;
-}
+ /*   left: 3.47222%;
+}*/
 
 /*Lines of A propos solo*/
 /* Nos hébergements + links below */
-.footer_hebergements
+/* .footer_hebergements
 {
     position:absolute;
     top: 49px;
     /*left: 502px; en 1440*/
-    left: 34.86111%;
-}
+    /*left: 34.86111%;
+} */
 /* Assistance + links below */
-.footer_assistance
+/*.footer_assistance
 {
     position:absolute;
     /* left: 958px; en 1440*/
-    left: 66.5277%;
-}
+  /*  left: 66.5277%;
+}*/
 /* Assistance Title */
-.footer_assistance .title_assistance
+/*.footer_assistance .title_assistance
 {
     position:absolute;
     top: 49px;
 }
 /* line1 below Assistance */
-.footer_assistance .assistance_line1
+/*.footer_assistance .assistance_line1
 {
     position: absolute;
     top: 89px;
 }
 /* line2 below Assistance */
-.footer_assistance .assistance_line2
+/*.footer_assistance .assistance_line2
 {
     position: absolute;
     bottom:  98px;
 }
-
+*/
 /* Links Styles - Always Link > Visited > Hover > Active */
 /* remove underline background */
 a:link
@@ -176,12 +224,6 @@ a:link
     background-color: none;
 }
 
-body 
-{
-    min-height: 100%;
-    margin: 0;
-    padding: 0;
-}
 p
 {
     font-size: 0.75em;
@@ -217,7 +259,58 @@ h3
     left: 3.81944%;
 
 }
-.footer
+@media screen
 {
-
+    #links_footer
+{
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    background-color: rgb(242,242,242);
+    position: absolute; bottom: 0; left:0;right: 0;
+    /*padding: 89px 3.47222% 57px 3.47222%;*/
+    width: 100%;
+    height: 218px;
+}
+}
+@media (min-width:300px) and (max-width: 734px)
+{
+#links_footer
+{
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    background-color: rgb(242,242,242);
+    position: absolute; bottom: 0; left:0;right: 0;
+    /*padding: 89px 3.47222% 57px 3.47222%;*/
+    width: 100%;
+    height: 436px;
+}
+@media all and (max-width: 300px)
+{
+#links_footer
+{
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    background-color: rgb(242,242,242);
+    position: absolute; bottom: 0; left:0;right: 0;
+    /*padding: 89px 3.47222% 57px 3.47222%;*/
+    width: 100%;
+    height: 654px;
+}
+}
+@media all and (max-device-width: 480px)
+{
+    #links_footer
+{
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    background-color: rgb(242,242,242);
+    position: absolute; bottom: 0; left:0;right: 0;
+    /*padding: 89px 3.47222% 57px 3.47222%;*/
+    width: 100%;
+    height: 654px;
+}
 }
