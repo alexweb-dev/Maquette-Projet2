@@ -2,21 +2,27 @@
 {
 font-family: 'raleway', Arial, 'sans-serif';
 }
+
+a
+{
+    color: black;
+    text-decoration: none;
+    background-color: none;
+}
 body
 {
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
-    
-   
+    min-height: 100vh; 
 }
 header
 {
-    background-color:coral;
+    background-color:none;
     display: flex;
     flex-direction: row;
     /* Eléments centrés au milieu indépendement de leur taille*/
     justify-content: space-between; /*gauche milieu droite (Add order pour les placer)*/
+    flex-wrap: wrap;
     margin-right: 5.34722rem;
     margin-left: 3.47222rem;
     order: 0;
@@ -24,9 +30,10 @@ header
 #links_header
 {
     display: flex;
-    align-items: center;
+   /* align-items: center;*/
     flex-wrap: wrap;
     flex-direction: row-reverse;/*Inverse l'ordre des éléments*/
+    align-items: center;/*Mettre baseline lors da la bordure top*/
     order: 3; /*normalement tout à droite*/
 
 }
@@ -34,6 +41,12 @@ header
 {
     display: flex;
     margin-left: 4.72222rem;
+}
+.header_login a
+{
+    color: rgb(0,101,252);
+    font-weight: bold;
+    font-size: 1.0em;
 }
 .header_activities
 {
@@ -43,6 +56,7 @@ header
 .header_lodging
 {
     display: flex;
+    color: rgb(0,101,252);
     margin-left: 4.72222rem;
 }
 .topage
@@ -50,18 +64,49 @@ header
     display: flex;
     order: 0; /*normalement tout à gauche */
 }
-
 .footer
 {
-    background-color: burlywood;
+    background-color: rgb(242,242,242);
+    height: 15rem;
+    min-width: 100rem;
+}
+#links_footer
+{
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-size: 1.0em;
 }
 .footer .footer_col
 {
     display: flex;
     flex-direction: column;
     margin-left: 3.47222rem;
+    margin-right: 16.52777rem;
+    margin-top: 2.6rem;
 }
+.footitle
+{
+    font-size: 1.063em;
+    font-weight: bold;
+}
+
+/*
+.footer .footer1
+{
+    display: flex;
+    order: 1;
+}
+.footer .footer2
+{
+    display: flex;
+    order: 2;
+}
+.footer .footer3
+{
+    display: flex;
+    order: 3;
+}*/
 
 .search
 {
@@ -79,4 +124,31 @@ block2
 block3
 {
     margin-left: 3.47222rem;
+}
+.footer ul 
+{
+    list-style: none;
+    padding-left: 0;
+    margin-top: -8px;
+}
+.footer li
+{
+        margin: 10px 0;
+}
+h1
+{
+    font-size: 1.313em;
+}
+h2
+{
+    font-size: 1.063em;
+}
+h3
+{
+    font-size: 1.0em;
+    font-weight: normal;
+}
+strong
+{
+    font-weight: normal;
 }
