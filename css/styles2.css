@@ -57,6 +57,9 @@ header
 {
     display: flex;
     color: rgb(0,101,252);
+    border-top: 2px solid rgb(0,101,252);
+    padding-top: 21px;
+    margin-top: -21px;
     margin-left: 4.72222rem;
 }
 .topage
@@ -91,23 +94,6 @@ header
     font-weight: bold;
 }
 
-/*
-.footer .footer1
-{
-    display: flex;
-    order: 1;
-}
-.footer .footer2
-{
-    display: flex;
-    order: 2;
-}
-.footer .footer3
-{
-    display: flex;
-    order: 3;
-}*/
-
 .search
 {
     margin-left: 3.47222rem;
@@ -121,10 +107,16 @@ block2
 {
     margin-left: 3.47222rem;
 }
-block3
+
+/*Section Activités à Marseille*/
+.block3
 {
+    background-color:cyan;
     margin-left: 3.47222rem;
 }
+
+
+/*Other footer proprieties*/
 .footer ul 
 {
     list-style: none;
